@@ -5,7 +5,7 @@
 
 int main (void)
 {
-    int di, mes, any;
+    int dia, mes, any;
     printf("Introdueix la data de naixement en format dia mes any separats per espais ");
     scanf("%d %d %d",&dia, &mes, &any);
 
