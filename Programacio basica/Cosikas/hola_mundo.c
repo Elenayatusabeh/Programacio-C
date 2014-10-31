@@ -1,5 +1,5 @@
 #include <windows.h>
-
+/*asd*/
 int main() {
 	const int maxOffset = 7;
 	POINT place;
