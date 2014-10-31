@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PersonalInstituto [
+<!ELEMENT PersonalInstituto (Docents, Nodocents)>
+<!ELEMENT Docents (Departaments)>
+<!ELEMENT Nodocents (Servei)>
+<!ELEMENT Departaments (Departament)>
+<!ATTLIST Departament nom CDATA #REQUIRED>
+<!ELEMENT servei (Numtrabajador, Cap, Empresa?)>
+<!ELEMENT Nprofessors (#PCDATA)>
+<!ELEMENT Cap (#PCDATA)>
+<!ELEMENT Empresa (#PCDATA)>
+<PersonalInstituto>
+	<Docents>
+		<Departaments>
+			<Departament nom="Informàtica">
+				<Nprofessors>11</Nprofessors>
+				<Cap>Eustaquio Colmenero</Cap>	
+			</Departament>
+			<Departament nom="Matemàtiques">
+				<Nprofessors>19</Nprofessors>
+				<Cap>Agamenón López</Cap>
+			</Departament>
+			<Departament nom="Socials">
+				<Nprofessors>8</Nprofessors>
+				<Cap>Eugenia Campohermoso</Cap>
+			</Departament>
+		</Departaments>
+	</Docents>
+	<Nodocents>
+		<servei nom="Neteja">
+			<Numtrabajador>2</Numtrabajador>
+			<Cap>Mariano Lavado</Cap>
+			<Empresa>Rumasa</Empresa>  <!-- <Empresa nom="Rumasa" /> -->
+		</servei>
+		<servei nom="Administratiu">
+			<Numtrabajador>4</Numtrabajador>
+			<Cap>Agustín Agusto</Cap>
+		</servei>
+		<servei nom="Conserges">
+			<Numtrabajador>1</Numtrabajador>
+			<Cap>Sergio Gudiño</Cap>
+		</servei>
+	</Nodocents>
+</PersonalInstituto>
