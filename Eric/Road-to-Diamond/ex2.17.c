@@ -3,9 +3,9 @@
 #define true 1
 #define false 0
 /*Algorisme que llegeix una seqüència de frases (un vers).
- El programa acaba quan li diem que no volem introduir més frases.
- La sortida ens diu per a cada frase quants caràcters té.
- En acabar ens diu quantes frases hem introduït.*/
+El programa acaba quan li diem que no volem introduir més frases.
+La sortida ens diu per a cada frase quants caràcters té.
+En acabar ens diu quantes frases hem introduït.*/
 
 int main (void)
 {
@@ -18,10 +18,12 @@ int main (void)
     while(x==true){
         x=false;
         fflush(stdin);
+        scanf("%c",&c);
         while(c!='\n'){
 
-            scanf("%c",&c);
             n++;
+            scanf("%c",&c);
+
         }
         printf("\nCaracters = %d\n",n);
         n=0;
@@ -33,23 +35,21 @@ int main (void)
 
             case 's':
             case 'S':
-                fflush(stdin);
-                x=true;
+            fflush(stdin);
+            x=true;
             break;
 
             case 'n':
             case 'N':
-                x=false;
+            x=false;
             break;
 
             default:
-                printf("Ha de ser si o no");
-                x=false;
+            printf("Ha de ser si o no");
+            x=false;
         }
 
     }
     printf("\nFrases = %d\n",f);
-
-
 
 }

@@ -6,6 +6,7 @@
 <!ELEMENT Departaments (Departament)>
 <!ATTLIST Departament nom CDATA #REQUIRED>
 <!ELEMENT servei (Numtrabajador, Cap, Empresa?)>
+<!ATTLIST servei nom CDATA #REQUIRED>
 <!ELEMENT Nprofessors (#PCDATA)>
 <!ELEMENT Cap (#PCDATA)>
 <!ELEMENT Empresa (#PCDATA)>
