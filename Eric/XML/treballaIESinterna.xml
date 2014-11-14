@@ -2,14 +2,17 @@
 <!DOCTYPE PersonalInstituto [
 <!ELEMENT PersonalInstituto (Docents, Nodocents)>
 <!ELEMENT Docents (Departaments)>
-<!ELEMENT Nodocents (Servei)>
-<!ELEMENT Departaments (Departament)>
-<!ATTLIST Departament nom CDATA #REQUIRED>
+<!ELEMENT Nodocents (servei*)>
+<!ELEMENT Departaments (Departament*)>
 <!ELEMENT servei (Numtrabajador, Cap, Empresa?)>
 <!ATTLIST servei nom CDATA #REQUIRED>
+<!ELEMENT Departament (Nprofessors, Cap)>
+<!ATTLIST Departament nom CDATA #REQUIRED>
 <!ELEMENT Nprofessors (#PCDATA)>
+<!ELEMENT Numtrabajador (#PCDATA)>
 <!ELEMENT Cap (#PCDATA)>
 <!ELEMENT Empresa (#PCDATA)>
+]>
 <PersonalInstituto>
 	<Docents>
 		<Departaments>

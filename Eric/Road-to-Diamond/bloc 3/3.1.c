@@ -15,14 +15,20 @@ int main(void)
     srand(time(NULL));
 
     ran=rand()%11;
-
+    num=-1;
     while(num!=ran){
-        printf("Tria un numero del 0 al 10\n");
+        printf("\nTria un numero del 0 al 10 ");
         scanf("%d",&num);
+        while(!(num>=0 && num<=10)){
+            printf("\nHa de ser un numero entre 0 i 10");
+            printf("\nTria un numero del 0 al 10 ");
+            fflush(stdin);
+            scanf("%d",&num);
+        }
         if(num!=ran){
-            printf("No has adivinat el numero\n");
+            printf("\nNo has adivinat el numero");
         }
     }
-    printf("Has adivinat el numero\n");
+    printf("\nHas adivinat el numero");
 
 }

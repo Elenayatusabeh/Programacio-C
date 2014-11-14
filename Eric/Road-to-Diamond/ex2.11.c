@@ -9,8 +9,9 @@ int main (void)
     int n, x;
     printf("Introdueix un numero enter:\n");
     scanf("%d",&n);
-    x=n;
+    x=n/2;
     printf("\nEls divisors de %d son:\n",n);
+    printf("%d",n);
     while(x>0){
         if(n%x==0){
             printf("%d\n",x);
